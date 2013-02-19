@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>awsAccordion</title>
+    <link rel="stylesheet" href="css/fonts/awesomeIconFonts/font-awesome.css" type="text/css">
+    <!--[if IE 7]>
+      <link rel="stylesheet" href="css/fonts/awesomeIconFonts/font-awesome-ie7.css" type="text/css">
+    <![endif]-->
+    <link rel="stylesheet" href="css/jquery.accordion.css" type="text/css">
+  </head>
+  <body>
+    <div id="accordion1">
+    <ul>
+        <li>
+            <h1>Hola</h1>
+            <div>
+                <span>Phasellus eget libero elit, a sodales felis. Morbi ligula tellus, posuere nec interdum ac, blandit et ante. Morbi nibh orci, eleifend vitae venenatis non, molestie in magna. Cras scelerisque risus eget odio interdum consequat.
+                </span>
+            </div>
+        </li>
+        <li>
+            <h1>Heading 2</h1>
+            <div>
+                <span>Phasellus eget libero elit, a sodales felis. Morbi ligula tellus, posuere nec interdum ac, blandit et ante. Morbi nibh orci, eleifend vitae venenatis non, molestie in magna. Cras scelerisque risus eget odio interdum consequat.
+                </span>
+            </div>
+        </li>
+        <li>
+            <h1>Heading 3</h1>
+            <div>
+                <span>Phasellus eget libero elit, a sodales felis. Morbi ligula tellus, posuere nec interdum ac, blandit et ante. Morbi nibh orci, eleifend vitae venenatis non, molestie in magna. Cras scelerisque risus eget odio interdum consequat.
+                </span>
+            </div>
+        </li>
+        <li>
+            <h1>Heading 4</h1>
+            <div>
+                <span>Phasellus eget libero elit, a sodales felis. Morbi ligula tellus, posuere nec interdum ac, blandit et ante. Morbi nibh orci, eleifend vitae venenatis non, molestie in magna. Cras scelerisque risus eget odio interdum consequat.
+                </span>
+            </div>
+        </li>      
+    </ul>
+    </div>
+    <script src="jquery-1.8.2.min.js"></script>
+    <script src="jquery.accordion.js"></script>
+    <script>    
+    $("#accordion1").awsAccordion({
+      type:"horizontal",
+      cssAttrsHor:{
+          ulWidth:"responsive",
+          liHeight:300,
+        	liWidth:50
+      },
+      startSlide:2,
+      openCloseHelper:{
+          openIcon:"plus",
+          closeIcon:"minus"
+      },
+      openOnebyOne:true,
+      classTab:"small",
+      slideOn:"click",
+      autoPlay:true,
+      autoPlaySpeed:2000
+    })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+/**################################################
+##
+##   project:    awsAccordion - a vertical/horizontal accordion plugin for jQuery
+##   author:     @anotherwebstorm
+##   demo:       code.anotherwebstorm.com/apps/awsaccordion.html
+##   Version:    1.0
+##   Copyright:  (c) 2012-2013 Marco Cardoso
+##
+################################################**/
+
+/*##IMPORT AWESOME FONT ICONS##*/
+  /*Refer to http://fortawesome.github.com/Font-Awesome/#all-icons to check all icons */
+
+
+/*##VERTICAL ACCORDION##*/
+.accordion-ver>ul , .accordion-hor>ul{
+  margin: 0 auto;
+  padding: 0;
+  list-style:none;
+} 
+.accordion-ver>ul>li {
+  display:block;
+  margin: 0;
+  list-style:none;
+  clear: left;
+  position: relative;
+  width: 100%;
+  border-bottom:#f0f0f0 1px solid;
+  background:#cccccc;
+  *margin-bottom: -4px; /* IE6 e IE7 */
+}
+.accordion-ver>ul>li:hover {
+  cursor:pointer;
+}
+.accordion-ver>ul>li.last {
+  border: 0;
+}  
+.accordion-ver>ul>li>h1 {
+  position: absolute;
+  display:block;
+  float:left;
+  margin: 0;
+  padding: 0 0 0 10px;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration:none;
+  text-transform:uppercase;
+  color: #000;
+}
+.accordion-ver>ul>li>h1:hover {
+  cursor:pointer;
+} 
+.accordion-ver>ul>li>div {
+  display:none;
+  background: #666;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.accordion-ver:hover>ul>li:hover>div {
+  cursor: default;
+} 
+.accordion-ver>ul>li>div>span {
+  padding:10px;
+  display: block;
+  text-align: left !important;
+  line-height: normal;
+}
+.accordion-ver>ul>li>span.numericTab {
+  position: absolute;
+  display:block;
+  top: 0;
+  padding: 0 10px 0 0;
+  float:right;
+  margin: 0;
+  right: 0;
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration:none;
+  color: #000;
+  background:#cccccc;  
+}
+.accordion-ver>ul>li>i {
+  position: absolute;
+  display:block;
+  top: 0;
+  right: 0;
+  padding: 0 10px 0 0;
+  float:right;
+  margin: 0;
+  font-size: 18px;
+  text-decoration:none;
+  color: #000;
+}
+
+/*##HORIZONTAL ACCORDION##*/
+.accordion-hor>ul>li {
+  display:block;
+  margin: 0;
+  list-style:none;
+  overflow: hidden;
+  float:left;
+  padding: 0;
+  position: relative;
+  border-right:#f0f0f0 1px solid;
+  background:#cccccc;
+}
+.accordion-hor>ul>li:hover {
+  cursor:pointer;
+}
+.accordion-hor>ul>li.last {
+  border: 0;
+} 
+.accordion-hor>ul>li>h1 {
+  position: absolute;
+  display:block;
+  float:left;
+  /*margin-top: 0;*/
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  width: 100%;
+  top: 30px;
+  text-align: left;
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration:none;
+  text-transform:uppercase;
+  color: #000;
+
+  /* CSS3 Transform Rotate & Translate for H1 */
+  white-space:nowrap;
+  -moz-transform: rotate(90.0deg) translate(-40px,0px);  /* FF3.5+ */
+  -moz-transform-origin: 0 100%;
+  -o-transform: rotate(90.0deg) translate(-40px,0px);  /* Opera 10.5 */
+  -o-transform-origin: 0 100%;
+  -webkit-transform: rotate(90.0deg) translate(-40px,0px);  /* Saf3.1+, Chrome */
+  -webkit-transform-origin: 0 100%;
+  transform: rotate(90.0deg) translate(-40px,0px);  /* Saf3.1+, Chrome */
+  transform-origin: 0 100%;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1.0);  /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1.0)"; /* IE8 */ 
+}
+.accordion-hor>ul>li>h1:hover {
+  cursor:pointer;
+}
+.accordion-hor>ul>li>div {
+  position:relative;
+  display:block;
+  float:left;
+  overflow: hidden;
+  *top:0px;       /* IE7 Hack */
+  *left:0px;      /* IE7 Hack */
+  margin:0;
+  background: #666;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.accordion-hor:hover>ul>li:hover>div {
+  cursor: default;  
+}
+.accordion-hor>ul>li>div>span {
+  padding:10px;
+  display: block;
+  text-align: left !important;
+  line-height: normal;
+}
+.accordion-hor>ul>li>span.numericTab {
+  position: absolute;
+  display:block;
+  bottom: 0;
+  padding: 10px 0;
+  float:left;
+  margin: 0;
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration:none;
+  text-align: center;
+  color: #000;
+  background:#cccccc;  
+}
+.accordion-hor>ul>li>i {
+  position: absolute;
+  display:block;
+  bottom: 0;
+  padding: 10px 0;
+  float:left;
+  margin: 0;
+  font-size: 18px;
+  text-decoration:none;
+  color: #000;  
+}
