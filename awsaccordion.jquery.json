@@ -1,0 +1,38 @@
+{
+    "name": "awsaccordion",
+    "title": "jQuery accordion",
+    "description": "The ultimate jquery accordion generator",
+    "keywords": [
+        "accordion",
+        "generator",
+        "vertical",
+        "horizontal",
+        "plugin",
+        "anotherwebstorm",
+        "jquery"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "@anotherwebstorm",
+        "url": "https://github.com/anotherwebstorm/awsAccordion"
+    },
+    "maintainers": [
+        {
+            "name": "Marco Cardoso",
+            "email": "hello@anotherwebstorm.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/anotherwebstorm/awsAccordion"
+        }
+    ],
+    "bugs": "https://github.com/anotherwebstorm/awsAccordion",
+    "homepage": "https://github.com/anotherwebstorm/awsAccordion",
+    "docs": "https://github.com/anotherwebstorm/awsAccordion",
+    "download": "https://github.com/anotherwebstorm/awsAccordion",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
