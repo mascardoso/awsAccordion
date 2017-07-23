@@ -1,7 +1,5 @@
 awsAccordion - THE ULTIMATE JQUERY ACCORDION
 ============================================
-
-* Demo and Documentation: [http://code.anotherwebstorm.com/apps/awsaccordion/](http://code.anotherwebstorm.com/apps/awsaccordion/)
 * Source: [https://github.com/anotherwebstorm/awsAccordion](https://github.com/anotherwebstorm/awsAccordion)
 
 
