@@ -149,7 +149,7 @@
   position:relative;
   display:block;
   float:left;
-  overflow: hidden;
+  overflow-x: hidden;
   *top:0px;       /* IE7 Hack */
   *left:0px;      /* IE7 Hack */
   margin:0;

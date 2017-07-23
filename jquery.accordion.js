@@ -394,7 +394,7 @@
               $(headLis).parent().find('li').eq(i).css({
                 'width': settings.cssAttrsHor.liWidth + 'px',
                 'height': settings.cssAttrsHor.liHeight + 'px'
-              }).find('div').css({
+              }).find('div:first').css({
                 'left': settings.cssAttrsHor.liWidth + 'px',
                 'width': methods.calcDivWidthHor() + 'px',
                 'height': settings.cssAttrsHor.liHeight + 'px'
